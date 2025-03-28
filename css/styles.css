@@ -1,0 +1,211 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFFAF0;
+    color: #4A4A4A;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: 600;
+    color: #FF69B4;
+    margin: 20px 0;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+#player-config, #config-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+#player-config input, #player-config select {
+    padding: 12px;
+    text-align: center;
+    width: 180px;
+    border: 2px solid #FFB6C1;
+    border-radius: 5px;
+    background-color: #FFF0F5;
+    font-size: 1.1em;
+    transition: all 0.3s ease;
+}
+
+#player-config input:focus, #player-config select:focus {
+    border-color: #FF69B4;
+    outline: none;
+}
+
+#config-bar input {
+    width: 100px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+button {
+    padding: 12px 24px;
+    font-size: 1.1em;
+    background-color: #FF69B4;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #FF1493;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+#connect4-container {
+    display: grid;
+    grid-template-columns: repeat(7, 60px);
+    grid-template-rows: repeat(6, 60px);
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+    width: fit-content;
+    background-color: #FFB6C1;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.cell {
+    width: 60px;
+    height: 60px;
+    background-color: #FFF0F5;
+    border-radius: 50%;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.cell:hover {
+    transform: scale(1.05);
+}
+
+#joueur-courant {
+    margin-top: 20px;
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #FF69B4;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+#joueur-courant span {
+    color: #FF1493;
+}
+
+#scores {
+    margin: 20px 0;
+    font-size: 1.3em;
+    color: #FF69B4;
+    font-weight: 500;
+}
+
+
+
+@media (max-width: 768px) {
+    #player-config input, #player-config select {
+        width: 120px;
+    }
+
+    #connect4-container {
+        grid-template-columns: repeat(7, 50px);
+        grid-template-rows: repeat(6, 50px);
+    }
+
+    .cell {
+        width: 50px;
+        height: 50px;
+    }
+
+    button {
+        padding: 10px 20px;
+    }
+
+    #joueur-courant {
+        font-size: 1.3em;
+    }
+}
+
+
+
+
+.bleu {
+    background-color: rgb(61, 127, 156);
+}
+
+.jaune {
+    background-color: yellow;
+}
+
+.rouge {
+    background-color: red;
+}
+
+.vert {
+    background-color: green;
+}
+
+.violet {
+    background-color: violet;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.rose {
+    background-color: pink;
+}
+
+.blanc {
+    background-color: white;
+}
+
+.noir {
+    background-color: black;
+}
+
+.gris {
+    background-color: gray;
+}
+
+.cyan {
+    background-color: cyan;
+}
+
+.magenta {
+    background-color: magenta;
+}
+
+.turquoise {
+    background-color: turquoise;
+}
+
+.marron {
+    background-color: brown;
+}
+
+.argent {
+    background-color: silver;
+}
+
+.doré {
+    background-color: gold;
+}
+
+.beige {
+    background-color: beige;
+}

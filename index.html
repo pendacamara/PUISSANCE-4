@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puissance 4</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <h1>PUISSANCE 4</h1>
+  
+    <div id="player-config">
+        <label for="player1-name">Prénom Joueur 1 :</label>
+        <input type="text" id="player1-name" placeholder="Joueur 1" required>
+        <label for="player1-color">Couleur :</label>
+        <select id="player1-color">
+            <option value="bleu">Bleu</option>
+            <option value="jaune">Jaune</option>
+            <option value="rouge">Rouge</option>
+            <option value="vert">Vert</option>
+            <option value="violet">Violet</option>
+            <option value="orange">Orange</option>
+            <option value="rose">Rose</option>
+            <option value="blanc">Blanc</option>
+            <option value="gris">Gris</option>
+            <option value="magenta">Magenta</option>
+            <option value="turquoise">Turquoise</option>
+            <option value="marron">Marron</option>
+            <option value="argent">Argent</option>
+            <option value="doré">Doré</option>
+            <option value="beige">Beige</option>
+        </select>
+
+        <label for="player2-name">Prénom Joueur 2 :</label>
+        <input type="text" id="player2-name" placeholder="Joueur 2" required>
+        <label for="player2-color">Couleur :</label>
+        <select id="player2-color">
+            <option value="bleu">Bleu</option>
+            <option value="jaune">Jaune</option>
+            <option value="rouge">Rouge</option>
+            <option value="vert">Vert</option>
+            <option value="violet">Violet</option>
+            <option value="orange">Orange</option>
+            <option value="rose">Rose</option>
+            <option value="blanc">Blanc</option>
+            <option value="gris">Gris</option>
+            <option value="magenta">Magenta</option>
+            <option value="turquoise">Turquoise</option>
+            <option value="marron">Marron</option>
+            <option value="argent">Argent</option>
+            <option value="doré">Doré</option>
+            <option value="beige">Beige</option>
+        </select>
+
+    </div>
+
+    <div id="config-bar">
+        <label for="lignes">Lignes :</label>
+        <input type="number" id="lignes" value="6" min="4" max="10">
+        <label for="colonnes">Colonnes :</label>
+        <input type="number" id="colonnes" value="7" min="4" max="10">
+        <button id="start-game">Démarrer le jeu</button>
+    </div>
+
+    
+    <div id="connect4-container"></div>
+    <div id="joueur-courant"></div>
+    <div id="scores"></div>
+
+    <script src="js/connect4.js"></script>
+</body>
+</html>
